@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, TrucTracActivity!</string>
+    <string name="app_name">TrucTrac</string>
+    <color name="green">#bfcd89</color>
+    <dimen name="headingfont">18sp</dimen>
+   
+
+</resources>

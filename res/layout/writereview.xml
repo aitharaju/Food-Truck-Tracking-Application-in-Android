@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#fff"
+    android:gravity="center_horizontal"
+>
+<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/backgroundrepeat"
+	    android:gravity="center_vertical"
+	>
+
+	<TextView 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Draft a Review"
+	android:layout_centerInParent="true"
+	android:textSize="@dimen/headingfont"
+	android:textColor="#000"
+	android:textStyle="bold"
+	/>
+	</RelativeLayout>
+<LinearLayout
+    
+android:layout_width="fill_parent"
+android:layout_height="80dp"
+android:gravity="center"
+android:layout_margin="10dp" 
+android:orientation="horizontal"
+>
+	
+   <LinearLayout
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content" 
+		android:layout_weight="4"
+	> 
+<RatingBar 
+		android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0"
+        
+                style="?android:attr/ratingBarStyle"
+                android:isIndicator="false"
+                
+/>
+</LinearLayout>
+</LinearLayout>
+
+<EditText
+    android:id="@+id/review"
+     android:gravity="top"
+     android:layout_height="wrap_content"
+     android:layout_width="fill_parent"
+     android:textSize="16sp"
+     
+     android:lines="5"
+     android:layout_margin="10dp"
+/>
+<Button
+    android:id="@+id/submit"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:text="Submit"
+    android:onClick="submit"
+    />
+
+</LinearLayout>
